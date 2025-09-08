@@ -493,7 +493,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Image 
-                  src={RetailProPOSImage} 
+                  src= "/RetailProPOS.png"
                   alt="MBT Retail Pro" 
                   width={500} 
                   height={350} 
