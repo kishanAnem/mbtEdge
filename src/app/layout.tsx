@@ -29,7 +29,24 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}> 
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
+        <meta name="keywords" content="MBT Edge, RPO, KPO, staffing, business solutions, digital talent, recruitment, outsourcing, consulting" />
+        <meta name="author" content="MBT Edge" />
+        <meta property="og:title" content="MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions" />
+        <meta property="og:description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://mbtedge.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions" />
+        <meta name="twitter:description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
+        <meta name="twitter:image" content="/logo.png" />
+        <link rel="icon" href="/logo.png" />
+        <title>MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions</title>
+      </head>
       <body className="font-sans antialiased">
         <Header />
         <main className="min-h-screen">
