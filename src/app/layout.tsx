@@ -44,7 +44,17 @@ export default function RootLayout({
         <meta name="twitter:title" content="MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions" />
         <meta name="twitter:description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
         <meta name="twitter:image" content="/logo.png" />
-        <link rel="icon" href="/logo.png" />
+        
+  <meta name="keywords" content="Retail Pro, POS, Point of Sale, Inventory Management, Retail Software, MBT Edge Retail Pro" />
+  <meta name="description" content="MBT Edge offers Retail Pro POS solutions for advanced retail management, inventory control, and seamless point of sale operations." />
+  <meta property="og:title" content="Retail Pro POS Solutions by MBT Edge" />
+  <meta property="og:description" content="MBT Edge provides Retail Pro POS software for efficient retail management, inventory tracking, and business growth." />
+  <meta property="og:image" content="/assets/RetailProPOS.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:title" content="Retail Pro POS Solutions by MBT Edge" />
+  <meta name="twitter:description" content="MBT Edge provides Retail Pro POS software for efficient retail management, inventory tracking, and business growth." />
+  <meta name="twitter:image" content="/assets/RetailProPOS.png" />
+        <link rel="icon" href="/logo-s2.png" />
         <title>MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions</title>
       </head>
       <body className="font-sans antialiased">
