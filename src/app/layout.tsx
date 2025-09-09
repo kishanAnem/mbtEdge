@@ -54,7 +54,6 @@ export default function RootLayout({
         <meta name="twitter:description" content="MBT Edge provides Retail Pro POS software for efficient retail management, inventory tracking, and business growth." />
         <meta name="twitter:image" content="/assets/RetailProPOS.png" />
         <link rel="icon" href="/logo-s2.png" />
-        <title>MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions</title>
       </head>
       <body className="font-sans antialiased">
         <Header />
