@@ -16,10 +16,35 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions',
-  description: 'MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter.',
+  title: 'MBT Edge - Digital Talent Solutions | RPO, KPO & Staffing Services',
+  description: 'MBT Edge delivers cutting-edge RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations, reduce costs, and scale smarter.',
+  keywords: 'MBT Edge, RPO, KPO, staffing, business solutions, digital talent, recruitment, outsourcing, consulting, Retail Pro, POS, Point of Sale, Inventory Management',
+  openGraph: {
+    title: 'MBT Edge - Digital Talent Solutions | RPO, KPO & Staffing Services',
+    description: 'MBT Edge delivers cutting-edge RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations, reduce costs, and scale smarter.',
+    url: 'https://mbtedge.com',
+    siteName: 'MBT Edge',
+    images: [
+      {
+        url: '/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'MBT Edge Logo'
+      }
+    ],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MBT Edge - Digital Talent Solutions | RPO, KPO & Staffing Services',
+    description: 'MBT Edge delivers cutting-edge RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations.',
+    images: ['/logo.png']
+  },
   icons: {
-    icon: '/logo.png', // ← Add this if you want logo as favicon
+    icon: '/logo.png'
+  },
+  alternates: {
+    canonical: 'https://mbtedge.com'
   }
 }
 
@@ -33,27 +58,32 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
-        <meta name="keywords" content="MBT Edge, RPO, KPO, staffing, business solutions, digital talent, recruitment, outsourcing, consulting" />
+        <meta name="robots" content="index, follow" />
         <meta name="author" content="MBT Edge" />
-        <meta property="og:title" content="MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions" />
-        <meta property="og:description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:url" content="https://mbtedge.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="MBT Edge - Empowering Your Business with Tailored Digital Talent Solutions" />
-        <meta name="twitter:description" content="MBT Edge delivers cutting-edge RPO, KPO, and staffing solutions to help your business streamline operations, reduce costs, and scale smarter." />
-        <meta name="twitter:image" content="/logo.png" />
-        <meta name="keywords" content="Retail Pro, POS, Point of Sale, Inventory Management, Retail Software, MBT Edge Retail Pro" />
-        <meta name="description" content="MBT Edge offers Retail Pro POS solutions for advanced retail management, inventory control, and seamless point of sale operations." />
-        <meta property="og:title" content="Retail Pro POS Solutions by MBT Edge" />
-        <meta property="og:description" content="MBT Edge provides Retail Pro POS software for efficient retail management, inventory tracking, and business growth." />
-        <meta property="og:image" content="/assets/RetailProPOS.png" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:title" content="Retail Pro POS Solutions by MBT Edge" />
-        <meta name="twitter:description" content="MBT Edge provides Retail Pro POS software for efficient retail management, inventory tracking, and business growth." />
-        <meta name="twitter:image" content="/assets/RetailProPOS.png" />
-        <link rel="icon" href="/logo-s2.png" />
+        <meta name="language" content="English" />
+        <link rel="canonical" href="https://mbtedge.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "MBT Edge",
+              "url": "https://mbtedge.com",
+              "logo": "https://mbtedge.com/logo.png",
+              "description": "MBT Edge delivers cutting-edge RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations, reduce costs, and scale smarter.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-XXX-XXX-XXXX",
+                "contactType": "Customer Service"
+              },
+              "sameAs": [
+                "https://linkedin.com/company/mbtedge",
+                "https://twitter.com/mbtedge"
+              ]
+            })
+          }}
+        />
       </head>
       <body className="font-sans antialiased">
         <Header />
