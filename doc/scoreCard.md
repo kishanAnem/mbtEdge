@@ -26,12 +26,13 @@ This document consolidates all findings into separate GitHub Issues and a Kanban
 ## 📌 Issues Breakdown
 
 ### 🟢 Issue 1 – Messaging Improvements
-**Problem:** Homepage copy is generic.  
+**Problem:** Homepage copy is generic and lacks compelling, industry-specific value propositions.
 **Tasks:**
-- [ ] Rewrite homepage tagline with measurable outcomes (e.g., “Reduce hiring time by 40%”).  
-- [ ] Add industry-specific benefits (Healthcare, Finance, IT).  
-- [ ] Use stronger action verbs, reduce passive tone.  
-**Outcome:** Sharper messaging that resonates with clients.  
+- [ ] Rewrite homepage tagline to: “Reduce hiring time by 40% and boost productivity with MBTEdge’s tech staffing agency solutions.”
+- [ ] Add industry-specific benefits, e.g., “Specialized talent for Healthcare, Finance, and IT sectors.”
+- [ ] Use stronger action verbs and measurable outcomes, e.g., “Accelerate onboarding, maximize ROI, and scale your team with proven experts.”
+- [ ] Replace passive language with direct, client-focused statements.
+**Outcome:** Homepage will feature sharper, measurable messaging that resonates with target industries and drives conversions.
 
 ---
 

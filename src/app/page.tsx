@@ -24,7 +24,7 @@ const staggerContainer = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Logo Color Matched with Apple-like Animation */}
+      {/* Hero Section - Sharper Messaging & Industry Focus */}
       <section className="relative bg-gradient-to-br from-primary-50 to-primary-100 py-12 sm:py-16 lg:py-32 overflow-hidden">
         <motion.div 
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -42,18 +42,20 @@ export default function Home() {
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-logo-primary text-logoText-primary leading-tight mb-4 sm:mb-6"
                 variants={slideUp}
               >
-                Empowering Your Business with 
+                Reduce hiring time by 40% and boost productivity with
                 <motion.span 
                   className="text-primary-400 block sm:inline"
                   variants={slideUp}
-                > Tailored Digital Talent Solutions</motion.span>
+                > MBTEdge’s tech staffing agency solutions</motion.span>
               </motion.h1>
               
               <motion.p 
                 className="text-lg sm:text-xl text-logoText-secondary mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                 variants={slideUp}
               >
-                At MBT Edge, we bridge the gap between innovative technology and exceptional talent, driving your business forward with our comprehensive staffing and digital solutions.
+                Specialized talent for <b>Healthcare</b>, <b>Finance</b>, and <b>IT</b> sectors. Accelerate onboarding, maximize ROI, and scale your team with proven experts. We deliver measurable results—fast.
+                <br />
+                <Link href="/services" className="underline text-primary-400 ml-1">Explore our services</Link> or <Link href="/about" className="underline text-primary-400">learn more about MBTEdge</Link>.
               </motion.p>
               
               {/* CTA Buttons - Logo Blue */}
@@ -66,15 +68,15 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link href="/contact" className="block bg-primary-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-500 transition-colors text-center text-sm sm:text-base">
-                    Get Started Free
+                    Get Started
                   </Link>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="/products" className="block border-2 border-primary-400 text-primary-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors text-center text-sm sm:text-base">
-                    View Our Products
+                  <Link href="/services" className="block border-2 border-primary-400 text-primary-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors text-center text-sm sm:text-base">
+                    See All Services
                   </Link>
                 </motion.div>
               </motion.div>
@@ -114,7 +116,7 @@ export default function Home() {
               </motion.div>
             </motion.div>
             
-            {/* Dashboard Mockup */}
+            {/* Dashboard Mockup with alt text for accessibility */}
             <motion.div 
               className="lg:col-span-6 mt-8 sm:mt-12 lg:mt-0"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -134,6 +136,7 @@ export default function Home() {
                   whileHover={{ y: -5, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                   transition={{ type: "spring", stiffness: 100 }}
                 >
+                  <Image src={RetailProPOSImage} alt="Retail Pro POS dashboard screenshot" className="rounded-lg mb-4" />
                   <div className="flex items-center justify-between mb-4 sm:mb-6">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full"></div>
@@ -174,6 +177,47 @@ export default function Home() {
                 </motion.div>
               </div>
             </motion.div>
+      {/* FAQ Section for SEO */}
+      <section className="py-12 bg-primary-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-primary-700">What industries does MBTEdge serve?</h3>
+              <p className="text-logoText-secondary">We specialize in staffing for IT sectors.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">How quickly can I hire with MBTEdge?</h3>
+              <p className="text-logoText-secondary">Our tech staffing agency solutions can reduce hiring time by up to 40% compared to traditional methods.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">Do you offer support after placement?</h3>
+              <p className="text-logoText-secondary">Yes, we provide 24/7 support and ongoing partnership to ensure your success.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonial & Logo Section for Trust */}
+      <section className="py-12 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“MBTEdge helped us cut our hiring time in half and find top IT talent fast. Their team is responsive and truly understands our needs.”</p>
+              <span className="block font-semibold text-primary-700">— CTO, FinTech Client</span>
+            </div>
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“We scaled our healthcare team quickly and efficiently. MBTEdge’s process is seamless and results-driven.”</p>
+              <span className="block font-semibold text-primary-700">— HR Lead, Healthcare Provider</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
+            <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
+            <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
+            {/* Add more logos as needed */}
+          </div>
+        </div>
+      </section>
           </div>
         </motion.div>
       </section>
