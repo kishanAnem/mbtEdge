@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mbtedge.com'),
   title: 'MBTEdge (MBT Edge) - Digital Talent Solutions | RPO, KPO & Staffing Services',
   description: 'MBTEdge (also known as MBT Edge) delivers RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations, reduce costs, and scale smarter.',
-  keywords: 'MBTEdge, MBT Edge, RPO, KPO, staffing, business solutions, digital talent, recruitment, outsourcing, consulting, Retail Pro, POS, Point of Sale, Inventory Management',
+  keywords: 'MBTEdge, MBT Edge, RPO, KPO, staffing, tech staffing agency, business solutions, digital talent, recruitment, outsourcing, consulting, Retail Pro, POS, Point of Sale, Inventory Management',
   openGraph: {
     title: 'MBTEdge (MBT Edge) - Digital Talent Solutions | RPO, KPO & Staffing Services',
     description: 'MBTEdge (MBT Edge) delivers cutting-edge RPO, KPO, staffing solutions, and Retail Pro POS systems to help businesses streamline operations, reduce costs, and scale smarter.',

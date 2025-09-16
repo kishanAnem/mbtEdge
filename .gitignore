@@ -1,3 +1,4 @@
+# Exclude documentation folder from git and deployment
 # dependencies
 /node_modules
 
