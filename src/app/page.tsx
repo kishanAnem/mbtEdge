@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from '../components/motion'
-import RetailProPOSImage from '../assets/RetailProPOS.png'
 
 // Animation variants - using simpler TypeScript-compatible variants
 const fadeIn = {
@@ -53,9 +52,9 @@ export default function Home() {
                 className="text-lg sm:text-xl text-logoText-secondary mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                 variants={slideUp}
               >
-                Specialized talent for <b>Healthcare</b>, <b>Finance</b>, and <b>IT</b> sectors. Accelerate onboarding, maximize ROI, and scale your team with proven experts. We deliver measurable results—fast.
+                Specialized IT talent for your business. Accelerate onboarding, maximize ROI, and scale your tech team with proven IT experts. We deliver measurable results—fast.
                 <br />
-                <Link href="/services" className="underline text-primary-400 ml-1">Explore our services</Link> or <Link href="/about" className="underline text-primary-400">learn more about MBTEdge</Link>.
+                <Link href="/services" className="underline text-primary-400 ml-1">Explore our IT staffing services</Link> or <Link href="/about" className="underline text-primary-400">learn more about MBTEdge</Link>.
               </motion.p>
               
               {/* CTA Buttons - Logo Blue */}
@@ -136,7 +135,8 @@ export default function Home() {
                   whileHover={{ y: -5, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                   transition={{ type: "spring", stiffness: 100 }}
                 >
-                  <Image src={RetailProPOSImage} alt="Retail Pro POS dashboard screenshot" className="rounded-lg mb-4" />
+                  <Image src="/it_staffing.jpeg" width={500} 
+                  height={350}  alt="IT Staffing Dashboard" className="rounded-lg mb-4" />
                   <div className="flex items-center justify-between mb-4 sm:mb-6">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full"></div>
@@ -177,47 +177,27 @@ export default function Home() {
                 </motion.div>
               </div>
             </motion.div>
-      {/* FAQ Section for SEO */}
-      <section className="py-12 bg-primary-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold text-primary-700">What industries does MBTEdge serve?</h3>
-              <p className="text-logoText-secondary">We specialize in staffing for IT sectors.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-primary-700">How quickly can I hire with MBTEdge?</h3>
-              <p className="text-logoText-secondary">Our tech staffing agency solutions can reduce hiring time by up to 40% compared to traditional methods.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-primary-700">Do you offer support after placement?</h3>
-              <p className="text-logoText-secondary">Yes, we provide 24/7 support and ongoing partnership to ensure your success.</p>
-            </div>
-          </div>
+  {/* FAQ Section for SEO */}
+  <section className="py-12 bg-primary-50 mt-20 mb-12">
+    <div className="max-w-2xl mx-auto px-4">
+      <h2 className="text-2xl font-bold mb-8 text-primary-900 text-center">Frequently Asked Questions</h2>
+      <div className="divide-y divide-primary-100 bg-white rounded-xl shadow p-4 sm:p-8">
+        <div className="py-4">
+          <h3 className="font-semibold text-primary-700 mb-1">What type of staffing does MBTEdge provide?</h3>
+          <p className="text-logoText-secondary">We provide IT staffing solutions only, connecting you with top technology professionals for your business needs.</p>
         </div>
-      </section>
-      {/* Testimonial & Logo Section for Trust */}
-      <section className="py-12 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-primary-900">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-primary-50 p-6 rounded-lg shadow">
-              <p className="text-lg italic mb-2">“MBTEdge helped us cut our hiring time in half and find top IT talent fast. Their team is responsive and truly understands our needs.”</p>
-              <span className="block font-semibold text-primary-700">— CTO, FinTech Client</span>
-            </div>
-            <div className="bg-primary-50 p-6 rounded-lg shadow">
-              <p className="text-lg italic mb-2">“We scaled our healthcare team quickly and efficiently. MBTEdge’s process is seamless and results-driven.”</p>
-              <span className="block font-semibold text-primary-700">— HR Lead, Healthcare Provider</span>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
-            <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
-            <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
-            {/* Add more logos as needed */}
-          </div>
+        <div className="py-4">
+          <h3 className="font-semibold text-primary-700 mb-1">How quickly can I hire IT talent with MBTEdge?</h3>
+          <p className="text-logoText-secondary">Our IT staffing solutions can reduce hiring time by up to 40% compared to traditional methods.</p>
         </div>
-      </section>
+        <div className="py-4">
+          <h3 className="font-semibold text-primary-700 mb-1">Do you offer support after IT staff placement?</h3>
+          <p className="text-logoText-secondary">Yes, we provide 24/7 support and ongoing partnership to ensure your IT team's success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* Testimonial & Logo Section removed: No clients yet */}
           </div>
         </motion.div>
       </section>
@@ -232,7 +212,7 @@ export default function Home() {
                 <span className="text-gray-400 font-medium text-xs sm:text-sm">Co {i}</span>
               </div>
             ))}
-          </div>
+                        Specialized IT talent for your business. Accelerate onboarding, maximize ROI, and scale your tech team with proven IT experts. We deliver measurable results—fast.
         </div>
       </section>*/}
 
