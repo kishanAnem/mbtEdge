@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "redirect": "/coming_soon_page.html",
+      "statusCode": 302
+    }
+  ]
+}

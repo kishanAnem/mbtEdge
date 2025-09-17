@@ -9,34 +9,76 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
-        <motion.div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.h1 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            About MBT Edge
-          </motion.h1>
-          <motion.p 
-            className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            We bridge the gap between innovative technology and exceptional talent, driving businesses forward with our comprehensive solutions.
-          </motion.p>
-        </motion.div>
+        return (
+          <div className="min-h-screen bg-white">
+            {/* Hero Section */}
+            <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
+              <motion.div 
+                className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <motion.h1 
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                  About MBTEdge
+                </motion.h1>
+                <motion.p 
+                  className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  We are a passionate team dedicated to connecting top talent with leading organizations. Our mission is to empower businesses and professionals to achieve their goals through innovative staffing and digital solutions.
+                  <br />
+                  <Link href="/services" className="underline text-primary-400 ml-1">See our services</Link> or <Link href="/contact" className="underline text-primary-400">get in touch</Link> for a free consultation.
+                </motion.p>
+              </motion.div>
+            </section>
+      {/* Trust Section: Testimonials & Logos */}
+      <section className="py-12 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“The MBTEdge team truly understands our industry and delivers results every time.”</p>
+              <span className="block font-semibold text-primary-700">— VP, Financial Services</span>
+            </div>
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“Their consultative approach and deep talent network set them apart.”</p>
+              <span className="block font-semibold text-primary-700">— CTO, SaaS Company</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
+            <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
+            <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
+          </div>
+        </div>
       </section>
-      
-      {/* Our Story Section */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* FAQ Section for SEO */}
+      <section className="py-12 bg-primary-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-primary-700">What makes MBTEdge different from other tech staffing agencies?</h3>
+              <p className="text-logoText-secondary">We combine industry expertise, a consultative approach, and a robust talent network to deliver tailored solutions.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">Do you serve clients outside the US?</h3>
+              <p className="text-logoText-secondary">Yes, we support clients globally with remote and on-site staffing solutions.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">How can I partner with MBTEdge?</h3>
+              <p className="text-logoText-secondary">Contact us to discuss your needs and discover how we can help you achieve your goals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}

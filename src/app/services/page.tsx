@@ -30,8 +30,50 @@ export default function ServicesPage() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             We deliver innovative staffing and digital solutions to help businesses transform, optimize, and thrive in today's competitive landscape.
+            <br />
+            <Link href="/about" className="underline text-primary-400 ml-1">Learn more about MBTEdge</Link> or <Link href="/contact" className="underline text-primary-400">contact us</Link> for a free consultation.
           </motion.p>
         </motion.div>
+      </section>
+      {/* FAQ Section for SEO */}
+      <section className="py-12 bg-primary-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-primary-700">What types of staffing do you offer?</h3>
+              <p className="text-logoText-secondary">We provide direct placement, contract, and project-based staffing for IT, healthcare, finance, and more.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">How do you ensure candidate quality?</h3>
+              <p className="text-logoText-secondary">All candidates undergo extensive vetting, technical screening, and culture-fit assessment.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-primary-700">Can you help with urgent hiring needs?</h3>
+              <p className="text-logoText-secondary">Yes, our tech staffing agency specializes in rapid placements to help you scale quickly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Trust Section: Testimonials & Logos */}
+      <section className="py-12 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-primary-900">Client Success Stories</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“MBTEdge delivered top-tier IT talent for our urgent project. The process was seamless and results-driven.”</p>
+              <span className="block font-semibold text-primary-700">— CIO, Tech Startup</span>
+            </div>
+            <div className="bg-primary-50 p-6 rounded-lg shadow">
+              <p className="text-lg italic mb-2">“We filled critical healthcare roles in record time. MBTEdge is our go-to partner for staffing.”</p>
+              <span className="block font-semibold text-primary-700">— Director, Healthcare Group</span>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
+            <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
+            <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
+          </div>
+        </div>
       </section>
       
       {/* Staffing Services Section */}
