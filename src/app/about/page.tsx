@@ -65,7 +65,7 @@ export default function AboutPage() {
             >
               <div className="relative rounded-xl overflow-hidden shadow-xl aspect-video">
                 <Image 
-                  src="/logo.png" 
+                  src="/about.png" 
                   alt="MBT Edge Team"
                   width={600}
                   height={400}

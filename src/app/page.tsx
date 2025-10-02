@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from '../components/motion'
-import RetailProPOSImage from '../assets/RetailProPOS.png'
 
 // Animation variants - using simpler TypeScript-compatible variants
 const fadeIn = {
@@ -493,7 +492,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Image 
-                  src={RetailProPOSImage} 
+                  src="/RetailProPOS.png"
                   alt="MBT Retail Pro" 
                   width={500} 
                   height={350} 
