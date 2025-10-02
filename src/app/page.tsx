@@ -52,13 +52,7 @@ export default function Home() {
                 className="text-lg sm:text-xl text-logoText-secondary mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                 variants={slideUp}
               >
-<<<<<<< HEAD
-                Specialized IT talent for your business. Accelerate onboarding, maximize ROI, and scale your tech team with proven IT experts. We deliver measurable results—fast.
-                <br />
-                <Link href="/services" className="underline text-primary-400 ml-1">Explore our IT staffing services</Link> or <Link href="/about" className="underline text-primary-400">learn more about MBTEdge</Link>.
-=======
                 MBT Edge specializes in three key areas: cutting-edge .NET development, intelligent AI solutions, and strategic staffing services. We transform businesses through technology and talent.
->>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
               </motion.p>
               
               {/* CTA Buttons - Logo Blue */}
@@ -139,11 +133,6 @@ export default function Home() {
                   whileHover={{ y: -5, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                   transition={{ type: "spring", stiffness: 100 }}
                 >
-<<<<<<< HEAD
-                  <Image src="/it_staffing.jpeg" width={500} 
-                  height={350}  alt="IT Staffing Dashboard" className="rounded-lg mb-4" />
-=======
->>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
                   <div className="flex items-center justify-between mb-4 sm:mb-6">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full"></div>
@@ -184,30 +173,6 @@ export default function Home() {
                 </motion.div>
               </div>
             </motion.div>
-<<<<<<< HEAD
-  {/* FAQ Section for SEO */}
-  <section className="py-12 bg-primary-50 mt-20 mb-12">
-    <div className="max-w-2xl mx-auto px-4">
-      <h2 className="text-2xl font-bold mb-8 text-primary-900 text-center">Frequently Asked Questions</h2>
-      <div className="divide-y divide-primary-100 bg-white rounded-xl shadow p-4 sm:p-8">
-        <div className="py-4">
-          <h3 className="font-semibold text-primary-700 mb-1">What type of staffing does MBTEdge provide?</h3>
-          <p className="text-logoText-secondary">We provide IT staffing solutions only, connecting you with top technology professionals for your business needs.</p>
-        </div>
-        <div className="py-4">
-          <h3 className="font-semibold text-primary-700 mb-1">How quickly can I hire IT talent with MBTEdge?</h3>
-          <p className="text-logoText-secondary">Our IT staffing solutions can reduce hiring time by up to 40% compared to traditional methods.</p>
-        </div>
-        <div className="py-4">
-          <h3 className="font-semibold text-primary-700 mb-1">Do you offer support after IT staff placement?</h3>
-          <p className="text-logoText-secondary">Yes, we provide 24/7 support and ongoing partnership to ensure your IT team's success.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* Testimonial & Logo Section removed: No clients yet */}
-=======
->>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
           </div>
         </motion.div>
       </section>
