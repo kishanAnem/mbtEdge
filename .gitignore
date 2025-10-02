@@ -19,7 +19,7 @@ yarn-error.log*
 .pnp
 .pnp.js
 
-
+.github/*
 
 # next.js cache
 .next
