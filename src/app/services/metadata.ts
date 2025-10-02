@@ -1,12 +1,24 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services - RPO, KPO & Staffing Solutions | MBT Edge',
-  description: 'Explore MBT Edge premium services including RPO, KPO, staffing solutions, Retail Pro POS systems, and digital talent acquisition to grow your business.',
-  keywords: 'MBT Edge services, RPO services, KPO services, staffing solutions, Retail Pro POS, digital talent acquisition, business outsourcing',
+  title: 'Our Services - .NET Development, AI Solutions & Staffing | MBTEdge',
+  description: 'Explore MBTEdge comprehensive services: Expert .NET Development, Cutting-edge AI Solutions, and Premium Staffing Solutions to accelerate your business growth.',
+  keywords: '.NET development, AI solutions, staffing services, software development, artificial intelligence, tech recruiting, MBTEdge services',
+  alternates: {
+    canonical: 'https://mbtedge.com/services'
+  },
   openGraph: {
-    title: 'Services - RPO, KPO & Staffing Solutions | MBT Edge',
-    description: 'Explore MBT Edge premium services including RPO, KPO, staffing solutions, and Retail Pro POS systems.',
-    url: 'https://mbtedge.com/services'
+    title: 'Our Services - .NET Development, AI Solutions & Staffing | MBTEdge',
+    description: 'Expert .NET Development, AI Solutions & Staffing Services to transform your business',
+    url: 'https://mbtedge.com/services',
+    siteName: 'MBTEdge',
+    images: ['/logo.png'],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services - .NET Development, AI Solutions & Staffing | MBTEdge',
+    description: 'Expert .NET Development, AI Solutions & Staffing Services to transform your business',
+    images: ['/logo.png']
   }
 }

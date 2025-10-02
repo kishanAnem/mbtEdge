@@ -23,7 +23,7 @@ const staggerContainer = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Sharper Messaging & Industry Focus */}
+      {/* Hero Section - Logo Color Matched with Apple-like Animation */}
       <section className="relative bg-gradient-to-br from-primary-50 to-primary-100 py-12 sm:py-16 lg:py-32 overflow-hidden">
         <motion.div 
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -41,20 +41,24 @@ export default function Home() {
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-logo-primary text-logoText-primary leading-tight mb-4 sm:mb-6"
                 variants={slideUp}
               >
-                Reduce hiring time by 40% and boost productivity with
+                Expertise in .NET, AI & 
                 <motion.span 
                   className="text-primary-400 block sm:inline"
                   variants={slideUp}
-                > MBTEdge’s tech staffing agency solutions</motion.span>
+                > Strategic Staffing Solutions</motion.span>
               </motion.h1>
               
               <motion.p 
                 className="text-lg sm:text-xl text-logoText-secondary mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
                 variants={slideUp}
               >
+<<<<<<< HEAD
                 Specialized IT talent for your business. Accelerate onboarding, maximize ROI, and scale your tech team with proven IT experts. We deliver measurable results—fast.
                 <br />
                 <Link href="/services" className="underline text-primary-400 ml-1">Explore our IT staffing services</Link> or <Link href="/about" className="underline text-primary-400">learn more about MBTEdge</Link>.
+=======
+                MBT Edge specializes in three key areas: cutting-edge .NET development, intelligent AI solutions, and strategic staffing services. We transform businesses through technology and talent.
+>>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
               </motion.p>
               
               {/* CTA Buttons - Logo Blue */}
@@ -67,7 +71,7 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link href="/contact" className="block bg-primary-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-500 transition-colors text-center text-sm sm:text-base">
-                    Get Started
+                    Start Your Project
                   </Link>
                 </motion.div>
                 <motion.div
@@ -75,7 +79,7 @@ export default function Home() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link href="/services" className="block border-2 border-primary-400 text-primary-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors text-center text-sm sm:text-base">
-                    See All Services
+                    Our Expertise
                   </Link>
                 </motion.div>
               </motion.div>
@@ -92,7 +96,7 @@ export default function Home() {
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 mr-1 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  No Setup Fees
+                  .NET Certified
                 </motion.span>
                 <motion.span 
                   className="flex items-center"
@@ -101,7 +105,7 @@ export default function Home() {
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 mr-1 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  24/7 Support
+                  AI Specialists
                 </motion.span>
                 <motion.span 
                   className="flex items-center"
@@ -110,12 +114,12 @@ export default function Home() {
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-accent-500 mr-1 sm:mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  30-Day Free Trial
+                  Strategic Staffing
                 </motion.span>
               </motion.div>
             </motion.div>
             
-            {/* Dashboard Mockup with alt text for accessibility */}
+            {/* Dashboard Mockup */}
             <motion.div 
               className="lg:col-span-6 mt-8 sm:mt-12 lg:mt-0"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -135,8 +139,11 @@ export default function Home() {
                   whileHover={{ y: -5, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" }}
                   transition={{ type: "spring", stiffness: 100 }}
                 >
+<<<<<<< HEAD
                   <Image src="/it_staffing.jpeg" width={500} 
                   height={350}  alt="IT Staffing Dashboard" className="rounded-lg mb-4" />
+=======
+>>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
                   <div className="flex items-center justify-between mb-4 sm:mb-6">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-2 h-2 sm:w-3 sm:h-3 bg-red-500 rounded-full"></div>
@@ -156,27 +163,28 @@ export default function Home() {
                       className="flex items-center justify-between p-3 sm:p-4 bg-primary-50 rounded-lg"
                       variants={slideUp}
                     >
-                      <span className="font-medium text-sm sm:text-base text-logoText-primary">Active Staff</span>
-                      <span className="text-lg sm:text-2xl font-bold text-primary-400">1,247</span>
+                      <span className="font-medium text-sm sm:text-base text-logoText-primary">.NET Projects</span>
+                      <span className="text-lg sm:text-2xl font-bold text-primary-400">247</span>
                     </motion.div>
                     <motion.div 
                       className="flex items-center justify-between p-3 sm:p-4 bg-accent-50 rounded-lg"
                       variants={slideUp}
                     >
-                      <span className="font-medium text-sm sm:text-base text-logoText-primary">Revenue Today</span>
-                      <span className="text-lg sm:text-2xl font-bold text-accent-600">$24,680</span>
+                      <span className="font-medium text-sm sm:text-base text-logoText-primary">AI Solutions</span>
+                      <span className="text-lg sm:text-2xl font-bold text-accent-600">156</span>
                     </motion.div>
                     <motion.div 
                       className="flex items-center justify-between p-3 sm:p-4 bg-business-50 rounded-lg"
                       variants={slideUp}
                     >
-                      <span className="font-medium text-sm sm:text-base text-logoText-primary">Inventory Items</span>
-                      <span className="text-lg sm:text-2xl font-bold text-business-600">8,934</span>
+                      <span className="font-medium text-sm sm:text-base text-logoText-primary">Talent Placed</span>
+                      <span className="text-lg sm:text-2xl font-bold text-business-600">1,934</span>
                     </motion.div>
                   </motion.div>
                 </motion.div>
               </div>
             </motion.div>
+<<<<<<< HEAD
   {/* FAQ Section for SEO */}
   <section className="py-12 bg-primary-50 mt-20 mb-12">
     <div className="max-w-2xl mx-auto px-4">
@@ -198,6 +206,8 @@ export default function Home() {
     </div>
   </section>
   {/* Testimonial & Logo Section removed: No clients yet */}
+=======
+>>>>>>> 49fad3e45011ecde61457ace4dcb1a5352c14249
           </div>
         </motion.div>
       </section>
@@ -239,7 +249,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              Our Premium Staffing Services
+              Our Core Expertise Areas
             </motion.h2>
             <motion.p 
               className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4"
@@ -248,7 +258,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Cutting-edge talent solutions that help businesses streamline operations, reduce costs, and scale smarter with MBT Edge.
+              We excel in three specialized domains: .NET development, AI innovation, and strategic staffing solutions that transform businesses.
             </motion.p>
           </motion.div>
 
@@ -294,7 +304,7 @@ export default function Home() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                Direct Placement
+                .NET Development
               </motion.h3>
               <motion.p 
                 className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base"
@@ -303,7 +313,7 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                We help you build a high-performing workforce by connecting you with top talent that aligns with your company culture and technical needs.
+                Expert .NET development services including web applications, APIs, desktop software, and enterprise solutions using the latest .NET technologies.
               </motion.p>
               <motion.ul 
                 className="space-y-2 mb-4 sm:mb-6"
@@ -316,26 +326,26 @@ export default function Home() {
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Culture-fit Assessment
+                  ASP.NET Core & Web APIs
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Technical Skills Validation
+                  Blazor & MAUI Apps
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Long-term Success Planning
+                  Cloud & Microservices
                 </li>
               </motion.ul>
               <motion.div
                 whileHover={{ x: 5 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link href="/services/direct-placement" className="text-primary-600 font-medium hover:text-primary-700 text-sm sm:text-base">
+                <Link href="/services" className="text-primary-600 font-medium hover:text-primary-700 text-sm sm:text-base">
                   Learn More →
                 </Link>
               </motion.div>
@@ -368,7 +378,7 @@ export default function Home() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                IT & NON IT Staffing
+                AI Solutions
               </motion.h3>
               <motion.p 
                 className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base"
@@ -377,7 +387,7 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                We deliver top-tier talent across industries, ensuring businesses acquire skilled professionals for both short-term projects and long-term roles.
+                Cutting-edge artificial intelligence solutions including machine learning, automation, chatbots, and intelligent data analytics for business transformation.
               </motion.p>
               <motion.ul 
                 className="space-y-2 mb-4 sm:mb-6"
@@ -390,26 +400,26 @@ export default function Home() {
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Technology Specialists
+                  Machine Learning Models
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Healthcare Professionals
+                  Intelligent Automation
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Finance Experts
+                  Predictive Analytics
                 </li>
               </motion.ul>
               <motion.div
                 whileHover={{ x: 5 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link href="/services/it-staffing" className="text-accent-600 font-medium hover:text-accent-700 text-sm sm:text-base">
+                <Link href="/services" className="text-accent-600 font-medium hover:text-accent-700 text-sm sm:text-base">
                   Learn More →
                 </Link>
               </motion.div>
@@ -442,7 +452,7 @@ export default function Home() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                RPO Services
+                Staffing Solutions
               </motion.h3>
               <motion.p 
                 className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base"
@@ -451,7 +461,7 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                Our RPO services streamline your recruitment process, improving efficiency and reducing hiring costs while ensuring access to top talent.
+                Comprehensive staffing services including direct hire, contract staffing, and recruitment process outsourcing to meet all your talent acquisition needs.
               </motion.p>
               <motion.ul 
                 className="space-y-2 mb-4 sm:mb-6"
@@ -464,26 +474,26 @@ export default function Home() {
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  End-to-end Recruitment
+                  Direct Hire Placement
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Cost Reduction
+                  Contract & Temporary
                 </li>
                 <li className="flex items-center text-xs sm:text-sm text-gray-600">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Employer Brand Enhancement
+                  RPO Services
                 </li>
               </motion.ul>
               <motion.div
                 whileHover={{ x: 5 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link href="/services/rpo" className="text-business-600 font-medium hover:text-business-700 text-sm sm:text-base">
+                <Link href="/services" className="text-business-600 font-medium hover:text-business-700 text-sm sm:text-base">
                   Learn More →
                 </Link>
               </motion.div>
@@ -517,7 +527,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Image 
-                  src= "/RetailProPOS.png"
+                  src="/RetailProPOS.png"
                   alt="MBT Retail Pro" 
                   width={500} 
                   height={350} 
