@@ -2,10 +2,15 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
 
-export default function Header() {
-  const pathname = usePathname()
+interface HeaderProps {
+  currentPath?: string
+}
+
+export default function Header({ currentPath }: HeaderProps) {
+  const pathname = currentPath || ''
+
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +68,7 @@ export default function Header() {
             </button>
 
             {/* CTA Button - Logo Blue - Hidden on contact page */}
-            {pathname !== '/contact' && (
+            {!pathname.startsWith('/contact') && (
               <Link 
                 href="/contact" 
                 className="hidden md:inline-flex bg-primary-400 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-500 transition-colors"
