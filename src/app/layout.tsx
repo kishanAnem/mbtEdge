@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/layout/Header'
+import HeaderWrapper from '@/components/layout/HeaderWrapper'
 import Footer from '@/components/layout/Footer'
 
 const inter = Inter({ 
@@ -87,7 +87,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <Header />
+        <HeaderWrapper />
         <main className="min-h-screen">
           {children}
         </main>
