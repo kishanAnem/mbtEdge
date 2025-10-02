@@ -9,76 +9,34 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
-        return (
-          <div className="min-h-screen bg-white">
-            {/* Hero Section */}
-            <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
-              <motion.div 
-                className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <motion.h1 
-                  className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                  About MBTEdge
-                </motion.h1>
-                <motion.p 
-                  className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                >
-                  We are a passionate team dedicated to connecting top talent with leading organizations. Our mission is to empower businesses and professionals to achieve their goals through innovative staffing and digital solutions.
-                  <br />
-                  <Link href="/services" className="underline text-primary-400 ml-1">See our services</Link> or <Link href="/contact" className="underline text-primary-400">get in touch</Link> for a free consultation.
-                </motion.p>
-              </motion.div>
-            </section>
-      {/* Trust Section: Testimonials & Logos */}
-      <section className="py-12 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-primary-900">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-primary-50 p-6 rounded-lg shadow">
-              <p className="text-lg italic mb-2">“The MBTEdge team truly understands our industry and delivers results every time.”</p>
-              <span className="block font-semibold text-primary-700">— VP, Financial Services</span>
-            </div>
-            <div className="bg-primary-50 p-6 rounded-lg shadow">
-              <p className="text-lg italic mb-2">“Their consultative approach and deep talent network set them apart.”</p>
-              <span className="block font-semibold text-primary-700">— CTO, SaaS Company</span>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
-            <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
-            <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
-          </div>
-        </div>
+        <motion.div 
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.h1 
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            About MBT Edge
+          </motion.h1>
+          <motion.p 
+            className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            Specialists in .NET development, AI solutions, and strategic staffing services, driving digital transformation and talent acquisition success.
+          </motion.p>
+        </motion.div>
       </section>
-      {/* FAQ Section for SEO */}
-      <section className="py-12 bg-primary-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold text-primary-700">What makes MBTEdge different from other tech staffing agencies?</h3>
-              <p className="text-logoText-secondary">We combine industry expertise, a consultative approach, and a robust talent network to deliver tailored solutions.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-primary-700">Do you serve clients outside the US?</h3>
-              <p className="text-logoText-secondary">Yes, we support clients globally with remote and on-site staffing solutions.</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-primary-700">How can I partner with MBTEdge?</h3>
-              <p className="text-logoText-secondary">Contact us to discuss your needs and discover how we can help you achieve your goals.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+      {/* Our Story Section */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -88,13 +46,13 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded with a vision to transform how businesses access talent and technology, MBT Edge has evolved into a trusted partner for organizations seeking to innovate and grow in an increasingly competitive landscape.
+                MBT Edge was founded with a clear mission: to excel in three critical business domains. We specialize in .NET development for robust enterprise applications, AI solutions that drive intelligent automation, and strategic staffing services that connect exceptional talent with forward-thinking organizations.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our journey began with a simple idea: to provide businesses with access to exceptional talent and cutting-edge solutions that drive meaningful results. Today, we're proud to serve clients across industries, helping them navigate the complexities of modern business and achieve sustainable success.
+                Our .NET development team creates scalable, secure applications using the latest Microsoft technologies. Our AI specialists develop intelligent solutions that automate processes and provide valuable insights. Our staffing experts understand the unique challenges of talent acquisition in today's competitive market.
               </p>
               <p className="text-lg text-gray-600">
-                At MBT Edge, we believe in the power of people and technology working together to create transformative outcomes. This belief guides everything we do, from our recruitment processes to our digital solutions development.
+                Together, these three pillars of expertise enable us to deliver comprehensive solutions that drive real business value and measurable results for our clients.
               </p>
             </motion.div>
             
@@ -107,7 +65,7 @@ export default function AboutPage() {
             >
               <div className="relative rounded-xl overflow-hidden shadow-xl aspect-video">
                 <Image 
-                  src="/logo.png" 
+                  src="/about.png" 
                   alt="MBT Edge Team"
                   width={600}
                   height={400}
@@ -142,7 +100,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-600">
-                To empower businesses with the talent and technology they need to innovate, grow, and succeed in an ever-evolving marketplace. We strive to create meaningful connections that drive value and foster long-term partnerships.
+                To deliver excellence in .NET development, AI innovation, and strategic staffing solutions. We empower businesses through cutting-edge technology and exceptional talent acquisition services.
               </p>
             </motion.div>
             
@@ -162,7 +120,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-600">
-                To be the premier partner for businesses seeking transformative talent and technology solutions. We envision a world where every organization has access to the resources they need to thrive in the digital age.
+                To be the leading authority in .NET development, AI solutions, and staffing excellence. We envision transforming how businesses leverage technology and talent to achieve unprecedented growth and success.
               </p>
             </motion.div>
           </div>

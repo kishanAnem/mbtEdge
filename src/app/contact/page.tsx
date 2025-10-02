@@ -9,115 +9,213 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
+    company: '',
+    subject: '',
     message: '',
   });
 
-  // ...form handlers (if any) go here...
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call with timeout
+    setTimeout(() => {
+      console.log('Form submitted with:', formData);
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+      
+      // Reset form after success
+      setTimeout(() => {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          subject: '',
+          message: '',
+        });
+        setSubmitSuccess(false);
+      }, 3000);
+    }, 1500);
+  };
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
+      {/* Hero Section - Modern Design */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-700 py-20 relative overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
+        </div>
+        
         <motion.div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+          className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <motion.h1 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
+          <div className="text-center">
+            <motion.h1 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              Let's Connect
+            </motion.h1>
+            <motion.p 
+              className="text-xl md:text-2xl text-primary-100 mb-10 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              Have questions? We'd love to hear from you. Contact us today and our team will get back to you promptly.
+            </motion.p>
+          </div>
+
+          <motion.div 
+            className="grid md:grid-cols-3 gap-8 mt-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            const [formData, setFormData] = useState({
-              name: '',
-              email: '',
-              phone: '',
-              company: '',
-              subject: '',
-              message: '',
-            });
-
-            const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-              const { name, value } = e.target;
-              setFormData((prev) => ({ ...prev, [name]: value }));
-            };
-
-            const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-              e.preventDefault();
-              // Submission logic here
-              alert('Form submitted!');
-            };
-
-            return (
-              <div className="min-h-screen bg-white">
-                {/* Hero Section */}
-                <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-24">
-                  <motion.div 
-                    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <motion.h1 
-                      className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-900 mb-4"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                      Contact Us
-                    </motion.h1>
-                    <motion.p 
-                      className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3 }}
-                    >
-                      Ready to take the next step? Reach out to our team for a personalized consultation or to learn more about our <Link href="/services" className="underline text-primary-400">services</Link> and <Link href="/about" className="underline text-primary-400">company</Link>.
-                    </motion.p>
-                  </motion.div>
-                </section>
-                {/* Trust Section: Testimonials & Logos */}
-                <section className="py-12 bg-white">
-                  <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-2xl font-bold mb-6 text-primary-900">Trusted by Industry Leaders</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                      <div className="bg-primary-50 p-6 rounded-lg shadow">
-                        <p className="text-lg italic mb-2">“MBTEdge is responsive, professional, and delivers results. Highly recommended!”</p>
-                        <span className="block font-semibold text-primary-700">— HR Manager, Retail Chain</span>
-                      </div>
-                      <div className="bg-primary-50 p-6 rounded-lg shadow">
-                        <p className="text-lg italic mb-2">“Their team made our hiring process effortless and effective.”</p>
-                        <span className="block font-semibold text-primary-700">— COO, Tech Firm</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-wrap items-center justify-center gap-6 mt-8 opacity-70">
-                      <Image src="/assets/logos/logo.png" alt="Client logo 1" width={80} height={40} />
-                      <Image src="/assets/logos/logo1.png" alt="Client logo 2" width={80} height={40} />
-                    </div>
-                  </div>
-                </section>
-                {/* FAQ Section for SEO */}
-                <section className="py-12 bg-primary-50">
-                  <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-2xl font-bold mb-6 text-primary-900">Frequently Asked Questions</h2>
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="font-semibold text-primary-700">How quickly will I get a response?</h3>
-                        <p className="text-logoText-secondary">We respond to all inquiries within one business day.</p>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary-700">Can I request a free consultation?</h3>
-                        <p className="text-logoText-secondary">Absolutely! Just fill out the form and our team will reach out to schedule a call.</p>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary-700">What information should I provide?</h3>
-                        <p className="text-logoText-secondary">Please include your name, company, and a brief description of your needs so we can best assist you.</p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
-            );
+              <h3 className="text-xl font-bold text-white mb-2">Email</h3>
+              <p className="text-primary-100 mb-4">Drop us a line anytime</p>
+              <a href="mailto:info@mbtedge.com" className="text-white font-medium hover:underline">
+                info@mbtedge.com
+              </a>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
+              <p className="text-primary-100 mb-4">Mon-Fri from 9am to 6pm</p>
+              <a href="tel:+917981670731" className="text-white font-medium hover:underline">
+                +91 7981670731
+              </a>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">Office</h3>
+              <p className="text-primary-100 mb-4">Come say hello</p>
+              <address className="text-white font-medium not-italic">
+                Tirupati<br />
+                Andhra Pradesh, India 517501
+              </address>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+      
+      {/* Contact Form Section - Modern Clean Design */}
+      <section className="py-24" id="contact-form">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Left Column - Form Introduction */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+            >
+              <span className="inline-block bg-primary-100 text-primary-600 font-semibold text-sm px-3 py-1 rounded-full mb-6">GET IN TOUCH</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">We'd Love to Hear From You</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Fill out the form and our team will get back to you within 24 hours. We're here to help with any questions about our services, products, or partnership opportunities.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Expert Consultation</h3>
+                    <p className="text-gray-600">Receive personalized solutions tailored to your specific needs</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Quick Response</h3>
+                    <p className="text-gray-600">We prioritize your inquiries with a prompt 24-hour response time</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Dedicated Support</h3>
+                    <p className="text-gray-600">Access to our team of experts for ongoing guidance and assistance</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Social Media Links */}
+              <div className="mt-12">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h3>
+                <div className="flex space-x-4">
+                  <motion.a 
+                    href="https://linkedin.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="w-10 h-10 bg-primary-50 rounded-full flex items-center justify-center hover:bg-primary-100 transition-colors"
+                  >
+                    <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                  </motion.a>
+                  <motion.a 
+                    href="https://twitter.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="w-10 h-10 bg-primary-50 rounded-full flex items-center justify-center hover:bg-primary-100 transition-colors"
+                  >
+                    <svg className="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                  </motion.a>
+                  <motion.a 
+                    href="https://facebook.com" 
+                    target="_blank" 
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     className="w-10 h-10 bg-primary-50 rounded-full flex items-center justify-center hover:bg-primary-100 transition-colors"
@@ -229,10 +327,10 @@ export default function ContactPage() {
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
                   >
                     <option value="" disabled>Choose a subject</option>
-                    <option value="Direct Placement">Direct Placement</option>
-                    <option value="IT Staffing">IT Staffing</option>
-                    <option value="RPO Services">RPO Services</option>
-                    <option value="Retail Pro">Retail Pro</option>
+                    <option value=".NET Development">.NET Development</option>
+                    <option value="AI Solutions">AI Solutions</option>
+                    <option value="Staffing Services">Staffing Services</option>
+                    <option value="Partnership Opportunities">Partnership Opportunities</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>
                 </div>
@@ -301,7 +399,7 @@ export default function ContactPage() {
         </div>
       </section>
       
-      {/* Map Section - Full Width Modern Style */}
+      {/* Map Section - Full Width Modern Style 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
@@ -339,7 +437,7 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
-      
+      */}
       {/* FAQ Section - Clean Modern Style */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
