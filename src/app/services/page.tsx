@@ -21,7 +21,7 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Our Premium Services
+            Our Core Expertise
           </motion.h1>
           <motion.p 
             className="text-lg md:text-xl text-primary-700 mb-8 max-w-3xl mx-auto"
@@ -29,7 +29,7 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            We deliver innovative staffing and digital solutions to help businesses transform, optimize, and thrive in today's competitive landscape.
+            MBT Edge specializes in three key areas: .NET development, AI solutions, and strategic staffing services that drive business transformation.
           </motion.p>
         </motion.div>
       </section>
@@ -38,9 +38,9 @@ export default function ServicesPage() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Staffing Solutions</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">.NET Development Services</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive staffing services connect businesses with top talent across various industries and specializations.
+              Cutting-edge .NET development solutions using the latest Microsoft technologies to build robust, scalable applications.
             </p>
           </div>
           
@@ -59,28 +59,28 @@ export default function ServicesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Direct Placement</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">.NET Development</h3>
               <p className="text-gray-600 mb-6">
-                We find permanent talent that aligns with your company culture and technical requirements, ensuring long-term success.
+                Expert .NET development services including web applications, APIs, desktop software, and enterprise solutions using the latest Microsoft technologies.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Extensive candidate vetting
+                  ASP.NET Core & Web APIs
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Culture-fit assessment
+                  Blazor & MAUI Applications
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Long-term success planning
+                  Cloud & Microservices
                 </li>
               </ul>
               <motion.div
@@ -107,28 +107,28 @@ export default function ServicesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">IT & NON IT Staffing</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">AI Solutions</h3>
               <p className="text-gray-600 mb-6">
-                Access specialized talent across both technical and non-technical domains for projects of any scale and duration.
+                Cutting-edge artificial intelligence solutions including machine learning, automation, chatbots, and intelligent data analytics for business transformation.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Technology specialists
+                  Machine Learning Models
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Healthcare professionals
+                  Intelligent Automation
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Flexible engagement models
+                  Predictive Analytics
                 </li>
               </ul>
               <motion.div
@@ -155,28 +155,28 @@ export default function ServicesPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">RPO Services</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Staffing Solutions</h3>
               <p className="text-gray-600 mb-6">
-                Transform your recruitment process with our comprehensive Recruitment Process Outsourcing solutions.
+                Comprehensive staffing services including direct hire, contract staffing, and recruitment process outsourcing to meet all your talent needs.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  End-to-end recruitment
+                  Direct hire placement
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Cost optimization
+                  Contract & temporary
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
                   <svg className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                   </svg>
-                  Employer brand enhancement
+                  RPO services
                 </li>
               </ul>
               <motion.div
@@ -196,9 +196,9 @@ export default function ServicesPage() {
       <section className="py-16 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Digital Solutions</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Additional Services</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Innovative digital products and services designed to transform how businesses operate in the modern marketplace.
+              Supporting services that complement our core expertise in .NET, AI, and staffing solutions.
             </p>
           </div>
           

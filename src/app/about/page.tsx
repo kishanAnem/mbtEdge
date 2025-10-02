@@ -29,7 +29,7 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            We bridge the gap between innovative technology and exceptional talent, driving businesses forward with our comprehensive solutions.
+            Specialists in .NET development, AI solutions, and strategic staffing services, driving digital transformation and talent acquisition success.
           </motion.p>
         </motion.div>
       </section>
@@ -46,13 +46,13 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded with a vision to transform how businesses access talent and technology, MBT Edge has evolved into a trusted partner for organizations seeking to innovate and grow in an increasingly competitive landscape.
+                MBT Edge was founded with a clear mission: to excel in three critical business domains. We specialize in .NET development for robust enterprise applications, AI solutions that drive intelligent automation, and strategic staffing services that connect exceptional talent with forward-thinking organizations.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our journey began with a simple idea: to provide businesses with access to exceptional talent and cutting-edge solutions that drive meaningful results. Today, we're proud to serve clients across industries, helping them navigate the complexities of modern business and achieve sustainable success.
+                Our .NET development team creates scalable, secure applications using the latest Microsoft technologies. Our AI specialists develop intelligent solutions that automate processes and provide valuable insights. Our staffing experts understand the unique challenges of talent acquisition in today's competitive market.
               </p>
               <p className="text-lg text-gray-600">
-                At MBT Edge, we believe in the power of people and technology working together to create transformative outcomes. This belief guides everything we do, from our recruitment processes to our digital solutions development.
+                Together, these three pillars of expertise enable us to deliver comprehensive solutions that drive real business value and measurable results for our clients.
               </p>
             </motion.div>
             
@@ -100,7 +100,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-lg text-gray-600">
-                To empower businesses with the talent and technology they need to innovate, grow, and succeed in an ever-evolving marketplace. We strive to create meaningful connections that drive value and foster long-term partnerships.
+                To deliver excellence in .NET development, AI innovation, and strategic staffing solutions. We empower businesses through cutting-edge technology and exceptional talent acquisition services.
               </p>
             </motion.div>
             
@@ -120,7 +120,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-lg text-gray-600">
-                To be the premier partner for businesses seeking transformative talent and technology solutions. We envision a world where every organization has access to the resources they need to thrive in the digital age.
+                To be the leading authority in .NET development, AI solutions, and staffing excellence. We envision transforming how businesses leverage technology and talent to achieve unprecedented growth and success.
               </p>
             </motion.div>
           </div>

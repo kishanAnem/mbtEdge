@@ -109,8 +109,8 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
               <p className="text-primary-100 mb-4">Mon-Fri from 9am to 6pm</p>
-              <a href="tel:+12125551234" className="text-white font-medium hover:underline">
-                +1 (212) 555-1234
+              <a href="tel:+917981670731" className="text-white font-medium hover:underline">
+                +91 7981670731
               </a>
             </div>
             
@@ -124,8 +124,8 @@ export default function ContactPage() {
               <h3 className="text-xl font-bold text-white mb-2">Office</h3>
               <p className="text-primary-100 mb-4">Come say hello</p>
               <address className="text-white font-medium not-italic">
-                123 Business Avenue<br />
-                New York, NY 10001
+                Tirupati<br />
+                Andhra Pradesh, India 517501
               </address>
             </div>
           </motion.div>
@@ -327,10 +327,10 @@ export default function ContactPage() {
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all"
                   >
                     <option value="" disabled>Choose a subject</option>
-                    <option value="Direct Placement">Direct Placement</option>
-                    <option value="IT Staffing">IT Staffing</option>
-                    <option value="RPO Services">RPO Services</option>
-                    <option value="Retail Pro">Retail Pro</option>
+                    <option value=".NET Development">.NET Development</option>
+                    <option value="AI Solutions">AI Solutions</option>
+                    <option value="Staffing Services">Staffing Services</option>
+                    <option value="Partnership Opportunities">Partnership Opportunities</option>
                     <option value="General Inquiry">General Inquiry</option>
                   </select>
                 </div>
@@ -399,7 +399,7 @@ export default function ContactPage() {
         </div>
       </section>
       
-      {/* Map Section - Full Width Modern Style */}
+      {/* Map Section - Full Width Modern Style 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
@@ -437,7 +437,7 @@ export default function ContactPage() {
           </motion.div>
         </div>
       </section>
-      
+      */}
       {/* FAQ Section - Clean Modern Style */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
