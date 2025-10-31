@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import HeaderWrapper from '@/components/layout/HeaderWrapper'
 import Footer from '@/components/layout/Footer'
+import ScrollToTop from '@/components/ui/ScrollToTop'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     images: ['/logo.png']
   },
   icons: {
-    icon: '/logo.png'
+    icon: '/favicon.png'
   },
   alternates: {
     canonical: 'https://mbtedge.com'
@@ -92,6 +93,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   )
