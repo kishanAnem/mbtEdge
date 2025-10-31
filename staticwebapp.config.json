@@ -2,7 +2,11 @@
   "routes": [
     {
       "route": "/sitemap.xml",
-      "serve": "/sitemap.xml"
+      "rewrite": "/sitemap.xml"
+    },
+    {
+      "route": "/robots.txt", 
+      "rewrite": "/robots.txt"
     }
   ]
 }

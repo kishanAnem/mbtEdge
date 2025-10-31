@@ -48,6 +48,9 @@ export default function Header({ currentPath }: HeaderProps) {
             <Link href="/about" className="text-logoText-primary hover:text-primary-400 font-medium transition-colors">
               About
             </Link>
+            <Link href="/blog" className="text-logoText-primary hover:text-primary-400 font-medium transition-colors">
+              Blog
+            </Link>
             {/* Career link hidden as requested
             <Link href="/career" className="text-logoText-primary hover:text-primary-400 font-medium transition-colors">
               Careers
