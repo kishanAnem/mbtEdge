@@ -6,6 +6,16 @@ import { motion } from '../../components/motion';
 export default function BlogPage() {
   const blogPosts = [
     {
+      id: 'shopify-permissions',
+      title: 'Designing Staff Permissions for Shopify-like Stores: Redis, Postgres, or MongoDB?',
+      excerpt: 'Explore three backend options for staff permission systems in SaaS platforms, comparing Redis-only, Postgres/MySQL + Redis, and MongoDB + Redis approaches with practical cost and performance analysis.',
+      date: 'November 13, 2025',
+      readTime: '15 min read',
+      category: 'System Architecture',
+      tags: ['Architecture', 'Database', 'Redis', 'Shopify', 'SaaS'],
+      href: '/blog/shopify-permissions'
+    },
+    {
       id: 'service-pattern',
       title: 'The AbstractService Pattern: A Template for Consistent Service Layer Architecture',
       excerpt: 'Learn how the AbstractService Pattern combines Template Method, Decorator, and Strategy patterns to create robust, maintainable service layer architecture in .NET applications.',
